@@ -9,7 +9,20 @@
     <width>-1</width>
   </descriptionCol>
   <metadataCols/>
-  <attributeCols/>
+  <attributeCols>
+    <attribute-column52>
+      <typedDefaultValue>
+        <valueString>approval</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>true</hideColumn>
+      <width>-1</width>
+      <attribute>ruleflow-group</attribute>
+      <reverseOrder>false</reverseOrder>
+      <useRowNumber>false</useRowNumber>
+    </attribute-column52>
+  </attributeCols>
   <conditionPatterns>
     <Pattern52>
       <factType>Note</factType>
@@ -150,6 +163,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>approval</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueNumeric>0.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
@@ -189,6 +207,11 @@
       </value>
       <value>
         <valueString>Low Man Hours</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>approval</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -236,6 +259,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>approval</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueNumeric>50001</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
@@ -275,6 +303,11 @@
       </value>
       <value>
         <valueString>High Man Hours</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>approval</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
