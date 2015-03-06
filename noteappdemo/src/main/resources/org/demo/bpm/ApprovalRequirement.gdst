@@ -40,7 +40,11 @@
     <entries/>
   </auditLog>
   <imports>
-    <imports/>
+    <imports>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>org.demo.model.Note</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+    </imports>
   </imports>
   <packageName>org.demo.bpm</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
