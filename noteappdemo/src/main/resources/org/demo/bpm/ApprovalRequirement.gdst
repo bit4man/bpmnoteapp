@@ -10,8 +10,96 @@
   </descriptionCol>
   <metadataCols/>
   <attributeCols/>
-  <conditionPatterns/>
-  <actionCols/>
+  <conditionPatterns>
+    <Pattern52>
+      <factType>Note</factType>
+      <boundName>note</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>NUMERIC_BIGDECIMAL</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>From Budget</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>budgetAmount</factField>
+          <fieldType>BigDecimal</fieldType>
+          <operator>&gt;=</operator>
+          <parameters/>
+        </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>NUMERIC_BIGDECIMAL</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>To Budget</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>budgetAmount</factField>
+          <fieldType>BigDecimal</fieldType>
+          <operator>&lt;</operator>
+          <parameters/>
+        </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>NUMERIC_LONG</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>From Man Hours</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>manHours</factField>
+          <fieldType>Long</fieldType>
+          <operator>&gt;=</operator>
+          <parameters/>
+        </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>NUMERIC_LONG</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>To Man Hours</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>manHours</factField>
+          <fieldType>Long</fieldType>
+          <operator>&lt;</operator>
+          <parameters/>
+        </condition-column52>
+      </conditions>
+      <window>
+        <parameters/>
+      </window>
+    </Pattern52>
+  </conditionPatterns>
+  <actionCols>
+    <insert-fact-column52>
+      <typedDefaultValue>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>Approval?</header>
+      <factType>Approval</factType>
+      <boundName>approval</boundName>
+      <factField>requireApproval</factField>
+      <type>Boolean</type>
+      <isInsertLogical>false</isInsertLogical>
+    </insert-fact-column52>
+  </actionCols>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
       <acceptedTypes>
@@ -48,5 +136,178 @@
   </imports>
   <packageName>org.demo.bpm</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
-  <data/>
+  <data>
+    <list>
+      <value>
+        <valueNumeric class="int">1</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Low Budget</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>50000</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="long">0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_LONG</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="long">2000</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_LONG</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>false</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">2</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Low Man Hours</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>9999999999</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="long">0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_LONG</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="long">20</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_LONG</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>false</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">3</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>High Budget</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>50001</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>4000000</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="long">100</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_LONG</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="long">2000</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_LONG</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">4</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>High Man Hours</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>999999999</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="long">2000</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_LONG</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="long">50000</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_LONG</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <valueString></valueString>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+  </data>
 </decision-table52>
