@@ -8,12 +8,12 @@
       <fieldData>
         <field-data>
           <name>budgetAmount</name>
-          <value>400000</value>
+          <value>40000</value>
           <nature>1</nature>
         </field-data>
         <field-data>
           <name>manHours</name>
-          <value>250</value>
+          <value>50</value>
           <nature>1</nature>
         </field-data>
       </fieldData>
@@ -28,7 +28,7 @@
       <fieldValues>
         <expect-field>
           <fieldName>requireApproval</fieldName>
-          <expected>true</expected>
+          <expected>false</expected>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
