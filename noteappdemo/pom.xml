@@ -9,6 +9,13 @@
   <name>noteappdemo</name>
   <description>Demo of the Notes Application.
 Provides rules and workflow for approval, containers for statistics and reporting.</description>
+  <dependencies>
+    <dependency>
+      <groupId>org.demo</groupId>
+      <artifactId>model</artifactId>
+      <version>1.1</version>
+    </dependency>
+  </dependencies>
   <repositories>
     <repository>
       <id>guvnor-m2-repo</id>

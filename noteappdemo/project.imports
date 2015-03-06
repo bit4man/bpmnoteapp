@@ -4,6 +4,12 @@
       <import>
         <type>java.lang.Number</type>
       </import>
+      <import>
+        <type>org.demo.model.Note</type>
+      </import>
+      <import>
+        <type>org.demo.model.Approval</type>
+      </import>
     </imports>
   </imports>
   <version>1.0</version>
