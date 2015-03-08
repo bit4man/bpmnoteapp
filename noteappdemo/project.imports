@@ -7,6 +7,9 @@
       <import>
         <type>org.demo.model.Note</type>
       </import>
+      <import>
+        <type>org.demo.util.JsonHelper</type>
+      </import>
     </imports>
   </imports>
   <version>1.0</version>
