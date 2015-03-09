@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.demo</groupId>
   <artifactId>bpm</artifactId>
-  <version>3.3</version>
+  <version>3.4</version>
   <packaging>kjar</packaging>
   <name>noteappdemo</name>
   <description>Demo of the Notes Application.
