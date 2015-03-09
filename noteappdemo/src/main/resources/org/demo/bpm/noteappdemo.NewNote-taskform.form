@@ -4,4 +4,9 @@
 <property name="name" value="noteappdemo.NewNote-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<dataHolder inputId="" name="#0000A0" type="basicType" outId="budgetAmount" value="java.math.BigDecimal" id="budgetAmount"/>
+<dataHolder inputId="" name="#0000A0" type="basicType" outId="manHours" value="java.lang.Long" id="manHours"/>
+<dataHolder inputId="" name="#0000A0" type="basicType" outId="project" value="java.lang.String" id="project"/>
+<dataHolder inputId="" name="#0000A0" type="basicType" outId="text" value="java.lang.String" id="text"/>
+<dataHolder inputId="" name="#0000A0" type="basicType" outId="title" value="java.lang.String" id="title"/>
 </form>
