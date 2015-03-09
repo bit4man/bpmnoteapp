@@ -23,6 +23,40 @@
     <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
       <name>approval</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+    <fact-data>
+      <type>noteData</type>
+      <fieldData>
+        <field-data>
+          <name>budgetAmount</name>
+          <value>52000</value>
+          <nature>1</nature>
+        </field-data>
+        <field-data>
+          <name>manHours</name>
+          <value>450</value>
+          <nature>1</nature>
+        </field-data>
+      </fieldData>
+      <name>note2</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>noteData</type>
+      <fieldData>
+        <field-data>
+          <name>budgetAmount</name>
+          <value>20000</value>
+          <nature>1</nature>
+        </field-data>
+        <field-data>
+          <name>manHours</name>
+          <value>4000</value>
+          <nature>1</nature>
+        </field-data>
+      </fieldData>
+      <name>note3</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace/>
     <expect-fact>
       <fieldValues>
@@ -34,6 +68,30 @@
         </expect-field>
       </fieldValues>
       <name>note</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>requiresApproval</fieldName>
+          <expected>true</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>note2</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>requiresApproval</fieldName>
+          <expected>true</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>note3</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
