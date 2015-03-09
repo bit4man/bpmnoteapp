@@ -8,12 +8,12 @@
       <fieldData>
         <field-data>
           <name>budgetAmount</name>
-          <value>3000000</value>
+          <value>8000000</value>
           <nature>1</nature>
         </field-data>
         <field-data>
           <name>manHours</name>
-          <value>100</value>
+          <value>1000</value>
           <nature>1</nature>
         </field-data>
       </fieldData>
