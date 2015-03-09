@@ -110,7 +110,7 @@
       <boundName>note</boundName>
       <factField>requiresApproval</factField>
       <type>Boolean</type>
-      <update>true</update>
+      <update>false</update>
     </set-field-col52>
   </actionCols>
   <auditLog>
