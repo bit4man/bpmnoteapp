@@ -22,8 +22,8 @@
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
 <property name="defaultValueFormula" value=""/>
-<property name="inputBinding" value="noteIn/title"/>
-<property name="outputBinding" value="noteOut/title"/>
+<property name="inputBinding" value="note/title"/>
+<property name="outputBinding" value=""/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="1" name="note_notetxt" type="InputTextArea" id="1140472968">
@@ -45,8 +45,8 @@
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
 <property name="defaultValueFormula" value=""/>
-<property name="inputBinding" value="noteIn/notetxt"/>
-<property name="outputBinding" value="noteOut/notetxt"/>
+<property name="inputBinding" value="note/text"/>
+<property name="outputBinding" value=""/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="2" name="note_project" type="InputText" id="1808259593">
@@ -67,8 +67,8 @@
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
 <property name="defaultValueFormula" value=""/>
-<property name="inputBinding" value="noteIn/project"/>
-<property name="outputBinding" value="noteOut/project"/>
+<property name="inputBinding" value="note/project"/>
+<property name="outputBinding" value=""/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="3" name="note_budgetAmount" type="InputTextBigDecimal" id="898251811">
@@ -85,8 +85,8 @@
 <property name="styleclass" value=""/>
 <property name="cssStyle" value=""/>
 <property name="defaultValueFormula" value=""/>
-<property name="inputBinding" value="noteIn/budgetAmount"/>
-<property name="outputBinding" value="noteOut/budgetAmount"/>
+<property name="inputBinding" value="note/budgetAmount"/>
+<property name="outputBinding" value=""/>
 <property name="fieldClass" value="java.math.BigDecimal"/>
 </field>
 <field position="4" name="note_manHours" type="InputTextLong" id="37962513">
@@ -104,8 +104,8 @@
 <property name="styleclass" value=""/>
 <property name="cssStyle" value=""/>
 <property name="defaultValueFormula" value=""/>
-<property name="inputBinding" value="noteIn/manHours"/>
-<property name="outputBinding" value="noteOut/manHours"/>
+<property name="inputBinding" value="note/manHours"/>
+<property name="outputBinding" value=""/>
 <property name="fieldClass" value="java.lang.Long"/>
 </field>
 <field position="5" name="note_createdDate" type="InputDate" id="502779720">
@@ -121,8 +121,8 @@
 <property name="styleclass" value=""/>
 <property name="cssStyle" value=""/>
 <property name="defaultValueFormula" value=""/>
-<property name="inputBinding" value="noteIn/createdDate"/>
-<property name="outputBinding" value="noteOut/createdDate"/>
+<property name="inputBinding" value="note/createdDate"/>
+<property name="outputBinding" value=""/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
 <field position="6" name="note_author" type="InputText" id="1386711099">
@@ -143,9 +143,21 @@
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
 <property name="defaultValueFormula" value=""/>
-<property name="inputBinding" value="noteIn/author"/>
-<property name="outputBinding" value="noteOut/author"/>
+<property name="inputBinding" value="note/author"/>
+<property name="outputBinding" value=""/>
 <property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="7" name=":decorator_0" type="Separator" id="1471261850">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="labelCSSClass" value=""/>
+<property name="labelCSSStyle" value=""/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Approval or Rejectionquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="styleclass" value=""/>
+<property name="cssStyle" value=""/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value=""/>
+<property name="fieldClass" value="Separator"/>
 </field>
 <field position="8" name="note_isApproved" type="CheckBox" id="581886308">
 <property name="fieldRequired" value="false"/>
@@ -159,8 +171,8 @@
 <property name="styleclass" value=""/>
 <property name="cssStyle" value=""/>
 <property name="defaultValueFormula" value=""/>
-<property name="inputBinding" value="noteIn/isApproved"/>
-<property name="outputBinding" value="noteOut/isApproved"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="note/isApproved"/>
 <property name="fieldClass" value="java.lang.Boolean"/>
 </field>
 <field position="9" name="note_rejectionReason" type="HTMLEditor" id="1254265978">
@@ -182,21 +194,9 @@
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
 <property name="defaultValueFormula" value=""/>
-<property name="inputBinding" value="noteIn/rejectionReason"/>
-<property name="outputBinding" value="noteOut/rejectionReason"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="note/rejectionReason"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="7" name=":decorator_0" type="Separator" id="1471261850">
-<property name="fieldRequired" value="false"/>
-<property name="groupWithPrevious" value="false"/>
-<property name="labelCSSClass" value=""/>
-<property name="labelCSSStyle" value=""/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Approval or Rejectionquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="styleclass" value=""/>
-<property name="cssStyle" value=""/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value=""/>
-<property name="fieldClass" value="Separator"/>
-</field>
-<dataHolder supportedType="className" inputId="noteIn" name="#0000A0" type="dataModelerEntry" outId="noteOut" value="org.demo.model.Note" id="note"/>
+<dataHolder inputId="note" name="#0000A0" type="dataModelerEntry" outId="note" value="org.demo.bpm.NoteData" id="note"/>
 </form>
