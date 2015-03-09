@@ -1,5 +1,5 @@
 <scenario>
-  <name>Test noteData NoApproval.scenario</name>
+  <name>Test notedata Approval Required.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -8,7 +8,7 @@
       <fieldData>
         <field-data>
           <name>budgetAmount</name>
-          <value>30000</value>
+          <value>3000000</value>
           <nature>1</nature>
         </field-data>
         <field-data>
@@ -28,7 +28,7 @@
       <fieldValues>
         <expect-field>
           <fieldName>requiresApproval</fieldName>
-          <expected>false</expected>
+          <expected>true</expected>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
